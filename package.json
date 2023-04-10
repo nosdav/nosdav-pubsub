@@ -1,6 +1,6 @@
 {
   "name": "nosdav-pubsub",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "nosdav-pubsub",
   "main": "index.js",
   "scripts": {
