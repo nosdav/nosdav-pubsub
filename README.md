@@ -43,13 +43,20 @@ A pub-sub (publish-subscribe) system over Nostr allows for efficient message dis
 
 An event in the pub-sub system over Nostr should include the following properties:
 
--    ID: A unique identifier for the event.
--    Pubkey: The public key of the publisher.
--    Created_at: Timestamp of event creation.
--    Kind: Integer denoting the type of event.
--    Content: The actual message content.
--    Tags: An array of tags to categorize the event or describe its properties.
--    Sig: A signature to ensure the authenticity of the event.
+```JSON
+{
+    "id": "A unique identifier for the event",
+    "pubkey": "The public key of the publisher",
+    "created_at": "Timestamp of event creation",
+    "kind": "Integer denoting the type of event",
+    "content": "The actual message content",
+    "tags": "An array of tags to categorize the event or describe its properties",
+    "sig": "A signature to ensure the authenticity of the event"
+}
+```
+
+- **kind**: NosDAV will typically used kind 27235
+- **tags**: NosDAV will typically use "u" for a URI
 
 ### Subscriptions:
 
