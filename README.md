@@ -29,6 +29,9 @@ A pub-sub (publish-subscribe) system over Nostr allows for efficient message dis
 
 #### Components:
 
+![image](https://user-images.githubusercontent.com/65864/230929796-82b7c797-0dae-4f56-9499-d1eb026259f7.png)
+
+
 - **Publisher**: Entities that create and publish messages (events) to the network.
 
 - **Subscriber**: Entities that subscribe to specific publishers or topics to receive messages.
