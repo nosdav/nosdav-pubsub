@@ -26,13 +26,15 @@
 ### Overview:
 
 A pub-sub (publish-subscribe) system over Nostr allows for efficient message distribution across multiple subscribers by leveraging the existing Nostr protocol. This specification aims to outline the design and components of such a system.
-Components:
 
--    Publisher: Entities that create and publish messages (events) to the network.
+#### Components:
 
--    Subscriber: Entities that subscribe to specific publishers or topics to receive messages.
+- **Publisher**: Entities that create and publish messages (events) to the network.
 
--    Relay: Servers that facilitate the exchange of messages between publishers and subscribers.
+- **Subscriber**: Entities that subscribe to specific publishers or topics to receive messages.
+
+- **Relay**: Servers that facilitate the exchange of messages between publishers and subscribers.
+
 
 ### Event Structure:
 
@@ -79,7 +81,7 @@ Relays should support querying events based on publisher public keys, topics, or
 This specification provides a high-level overview of a pub-sub system over Nostr. Implementations can be further refined and optimized based on specific use cases or requirements.
 
 
-Additional Features:
+### Additional Features:
 
 -    Wildcard Subscriptions: Subscribers can use wildcard patterns to subscribe to multiple publishers, topics, or event types at once, simplifying subscription management.
 
